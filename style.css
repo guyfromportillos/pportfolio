@@ -1,7 +1,12 @@
+/* this makes the backround black..duh */
 body {
     background-color: black;
   }
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
+
+
+/* These make text white to look cool on the black backround */
 h1 {
 color: white;
 }
@@ -9,7 +14,75 @@ color: white;
 p {
 color: white;
 }
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
 
+
+
+/* this is a class that makes the text look cursive and fancy */
 .cur {
     font-family: 'Brush Script MT', cursive;
 }
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+
+
+/* this class makes title or menu things bigger and easier to click as well as easier to see */
+.title {
+    font-size: 40px;
+}
+
+
+
+
+
+/* This is a single-line comment */
+
+
+
+
+
+
+
+/* This is a single-line comment */
+
+
+
+
+
+/* This is a single-line comment */
+
+
+
+
+
+
+
+/* This is a single-line comment */
+
+
+
+
+
+
+/* This is a single-line comment */
+
+
+
+
+
+
+/* This is a single-line comment */
+
+
+
+
+
+
+/* This is a single-line comment */
+
+
+
+
+
+
+/* This is a single-line comment */
