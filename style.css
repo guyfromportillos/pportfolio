@@ -31,6 +31,36 @@ color: white;
     font-size: 40px;
 }
 
+/* BELOW IS THE THINGS FOR WHEN A LINK IS PRESSED TO KEEP IT WHITE AND NOT MAKE IT UGLY UNDERLINES PURPLE */
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  background-color: transparent;
+  text-decoration:none;
+}
+
+a:active {
+  color: dimgray;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* This is a single-line comment */
+
+
+
+/* This is a single-line comment */
 
 
 
@@ -42,30 +72,7 @@ color: white;
 
 
 
-
 /* This is a single-line comment */
-
-
-
-
-
-/* This is a single-line comment */
-
-
-
-
-
-
-
-/* This is a single-line comment */
-
-
-
-
-
-
-/* This is a single-line comment */
-
 
 
 
