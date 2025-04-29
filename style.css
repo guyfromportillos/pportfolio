@@ -56,8 +56,13 @@ a:active {
   text-decoration: none;
 }
 
-/* This is a single-line comment */
-
+/* This class makes things centered */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 
 /* This is a single-line comment */
