@@ -75,7 +75,9 @@ a:active {
 
 /* This is a single-line comment */
 
-
+.sticky {
+  position: sticky;
+  top: 0;
 
 
 
