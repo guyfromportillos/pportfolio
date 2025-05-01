@@ -84,10 +84,10 @@ a:active {
 
 /* This is a single-line comment */
 
-
-
-
-
+.half {
+    height: 50%;
+    width: 50%;
+}
 /* This is a single-line comment */
 
 
