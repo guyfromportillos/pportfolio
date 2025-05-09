@@ -25,7 +25,7 @@
             <p>Shoot the target</p>
         </div>
                  <img src="https://guyfromportillos.github.io/pportfolio/images/Target1.gif" alt="target practice" class="center">
-        <button class="center t-b dpad" type="t-b" onclick="alert('Not finished yet lol')">FIRE</button>
+        <button class="center t-b dpad" type="t-b" onclick="checkTime()">FIRE</button>
         <div class="center title">
         </div>
         
@@ -54,6 +54,12 @@
         }
 
         startTimer();
+
+         function checkTime() {
+    if (time > 3.25 && time < 3.75) {
+      console.log("peashooer");
+    }
+  }
     </script>
     </body>
 </html>
