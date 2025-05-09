@@ -20,6 +20,7 @@
 
 <button onclick="document.getElementById('myImage').src='https://raw.githubusercontent.com/guyfromportillos/pportfolio/refs/heads/main/images/HD_Toxic_Brainz.webp'">Toxic</button>
 </div> 
+        
         <div class="center"> 
             <p>Shoot the target</p>
         </div>
@@ -27,10 +28,59 @@
         <button class="center t-b dpad" type="t-b" onclick="alert('Not finished yet lol')">FIRE</button>
         <div class="center title">
         <script> 
-            var time=10;
-         if (time=0) {time=10}
-  //  block of code to be executed if the condition is true
-            
+             <script>
+        let time = 2.135;
+        let timerId;
+        let isRunning = false;
+        let startTime;
+        const timerDisplay = document.getElementById('timer');
+        const startButton = document.getElementById('start');
+        let repeatCount = 0;
+
+        function updateTimerDisplay() {
+        }
+
+        function startTimer() {
+            startTime = Date.now();
+            timerId = setInterval(() => {
+                const now = Date.now();
+                const elapsed = (now - startTime) / 1000;
+                time = 2.135 - elapsed;
+
+                if (time <= 0) {
+                    time = 0;
+                    clearInterval(timerId);
+                    isRunning = false;
+                    repeatCount++;
+
+                    if (repeatCount < 3) {
+                        startTimer();
+                    } else {
+                        startButton.textContent = 'Finished';
+                    }
+                    updateTimerDisplay();
+                }
+            }, 10);
+            isRunning = true;
+            startButton.textContent = 'Running';
+        }
+
+        function restartTimer() {
+            clearInterval(timerId);
+            time = 2.135;
+            repeatCount = 0;
+            updateTimerDisplay();
+            startTimer();
+        }
+
+        startButton.addEventListener('click', () => {
+            if (!isRunning) {
+                startTimer();
+            }
+        });
+
+        updateTimerDisplay();
+    </script>
         </script> 
         </div>
 
