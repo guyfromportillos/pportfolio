@@ -11,8 +11,9 @@
         <div class= "cur title sticky">
          <h1><a href="https://guyfromportillos.github.io/pportfolio/index.html" >My pportfolio</a></h1>
         </div>
-        <!-------MENU ABOVE------------------------------------------------------------------>
+
         <img src="https://guyfromportillos.github.io/pportfolio/images/saturn.png" alt="SEGA saturn" class="half center dpad">  <!---saturn ball image-->
+          <!-------This is the zombie section with the switching buttons------------------------------------------------------------------>
 <div class="dpad half center">
 <button onclick="document.getElementById('myImage').src='https://raw.githubusercontent.com/guyfromportillos/pportfolio/refs/heads/main/images/HD_Breakfast_Brainz.webp'">Breakfast</button>
 
@@ -20,7 +21,7 @@
 
 <button onclick="document.getElementById('myImage').src='https://raw.githubusercontent.com/guyfromportillos/pportfolio/refs/heads/main/images/HD_Toxic_Brainz.webp'">Toxic</button>
 </div> 
-
+    <!----This is the section where my interests are listed-------------------------------------------------------------->
         <div class="center white dpad" style="color: white;">
            <h2>Hobbys and interests</h2>
            <ul>
@@ -30,18 +31,18 @@
   <li>hobby numbah 4</li>
         </ul>
 </div>
-        
+ <!-------This is the part where i put the whole target practice "game"---------------------------------------------------------------->
         <div class="center"> 
             <p>Shoot the target</p>
         </div>
-                 <img src="https://guyfromportillos.github.io/pportfolio/images/Target1.gif" alt="target practice" class="center">
-        <button class="center t-b dpad" type="t-b" onclick="checkTime()">FIRE</button>
+                 <img src="https://guyfromportillos.github.io/pportfolio/images/Target1.gif" alt="target practice" class="center">  <!-------This is the gif------------->
+        <button class="center t-b dpad" type="t-b" onclick="checkTime()">FIRE</button> <!-------This is the button------------->
         <div class="center title">
-          <p>for the time being: ignore the gif and just try to press the button when the timer is between 3.75 to 3.25 see if you win...</p>
+          <p>For the time being: ignore the gif and just try to press the button when the timer is between 3.75 to 3.25, lets see if you can win...</p>
         </div>
         
        <p id="timer"</p>
-    <script>
+    <script> //this part is the entire timer system
         let time = 6; // Changed initial time to 6 seconds
         let timerId;
         let isRunning = false;
@@ -52,7 +53,7 @@
             startTime = Date.now();
             timerId = setInterval(() => {
                 const elapsed = (Date.now() - startTime) / 1000;
-                time = 6 - elapsed; // Changed 2.135 to 6
+                time = 6 - elapsed; 
 
                 if (time <= 0) {
                     clearInterval(timerId);
@@ -67,17 +68,17 @@
         startTimer();
     </script>
    <script>
-           function checkTime() {
+           function checkTime() {//this is the sention that checks if the button is clicked at the time time
     if (time > 3.25 && time < 3.75) {
       alert("HIT")}
         else
     {alert("MISS");
-    }
+    }//this is the end of the timer
   } </script>
            
-       <div class="center">   <img src="https://guyfromportillos.github.io/pportfolio/images/capture.PNG" alt="gamemaker image" class="center" width="50%" height="50%">  </div>
+       <div class="center">   <img src="https://guyfromportillos.github.io/pportfolio/images/capture.PNG" alt="gamemaker image" class="center" width="50%" height="50%">  </div> <!---This is the image of the gamemaker game------------->
 
-<div class="center white" style="color:white;"> 
+<div class="center white" style="color:white;">  <!-------This is the contact list------------->
            <h2>Contact information</h2>
            <ul>
   <li>John pork</li>
@@ -85,9 +86,9 @@
         </ul>
         </div>
 <div class="center white">
-        <footer>
-    <p>&copy; BB haters union 2025</p>
+        <footer> <!-------This is the footer------------->
+    <p>&copy; BB haters union 2025</p>  <!-------BB haters union is for those who know THOSE WHO KNOW------------->
         </footer>
         </div>
     </body>
-</html>
+</html> <!-------This is the end------------->
