@@ -102,7 +102,9 @@ border-radius: 5px; /* Rounded corners */
 }
 /* This is a single-line comment */
 
-
+.white {
+    color: white;
+}
 
 
 
